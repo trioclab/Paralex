@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#warpper{
+    color: whitesmoke;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+.background , .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+    width: 100%;
+}
+.foreground{
+    transform: translateZ(-30px) scale(4);
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
+    letter-spacing: 4px;
+
+}
+.section{
+    color: whitesmoke;
+    height: 30rem;
+}
+#heading{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.text{
+    background-color: rgb(26, 25, 25);
+    padding: 4rem 2rem;
+    position: relative;
+    top: 100%;
+    z-index: 1;
+}
+.top{
+    position: relative;
+    top: 0;
+    background-color: black;
+    padding: 3rem 1rem;
+}
+p{
+    width: 70rem;
+    font-size: 1.3rem;
+}
+.center{
+    padding:1rem 2rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 41%;
+}
+.bg{
+    position: relative;
+    background-position: center;
+    height: 600px;
+
+}
+.bg1{
+    background: url(sport-1.jpg)fixed;
+    background-size: cover;
+    
+}
+.bg2{
+    background: url(sport-2.jpg)fixed;
+    background-size: cover;
+}
+.bg3{
+    background: url(sport-3.jpg)fixed;
+    background-size: cover;
+}
